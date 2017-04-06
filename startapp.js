@@ -14,9 +14,31 @@ app.set('view engine', 'pug');
 app.get('/', function (req, res, next) {
 
     try {
+        res.render('index', { title: 'Index', message: 'This is the index' });
 
-        // render the 'index' template, and pass in a few variables
-        res.render('index', { title: 'Hey', message: 'Hello there!' });
+    } catch (e) { // if there are any errors, send them off the the logger
+        next(e);
+    }
+
+});
+
+// GET response for '/about'
+app.get('/about', function (req, res, next) {
+
+    try {
+		res.render('index', { title: 'About', message: 'This is the about' });
+
+    } catch (e) { // if there are any errors, send them off the the logger
+        next(e);
+    }
+
+});
+
+// GET response for '/bio'
+app.get('/bio', function (req, res, next) {
+
+    try {
+		res.render('index', { title: 'Bio', message: 'This is the bio' });
 
     } catch (e) { // if there are any errors, send them off the the logger
         next(e);

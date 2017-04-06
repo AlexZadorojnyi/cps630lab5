@@ -1,0 +1,25 @@
+{
+  "name": "cps630lab5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon startapp.js -e js,pug",
+    "start": "node startapp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexZadorojnyi/cps630lab5.git"
+  },
+  "author": "Alex Zadorojnyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexZadorojnyi/cps630lab5/issues"
+  },
+  "homepage": "https://github.com/AlexZadorojnyi/cps630lab5#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "morgan": "^1.8.1",
+    "pug": "^2.0.0-beta11"
+  }
+}
